@@ -9,6 +9,7 @@ public class steering : MonoBehaviour
     public Transform left_con;
     public Transform right_con;
     public Rigidbody bobsled;
+    public Transform player;
     
     public float angle_LR;
     public float angle_forward;
@@ -28,36 +29,46 @@ public class steering : MonoBehaviour
 
     int garb;
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        Debug.Log(left_con.localEulerAngles.x);
         //x is forward/backward
         //z is left/right
 
-        avg_rot_FB = 360-((headset.localRotation.x + left_con.rotation.eulerAngles.x + right_con.rotation.eulerAngles.x)/3);
+            avg_rot_FB = ((headset.transform.localEulerAngles.x + left_con.transform.localEulerAngles.x + right_con.transform.localEulerAngles.x) / 3);
 
-        if (headset.localRotation.x < angle_forward  )
+        if (avg_rot_FB > 10 && avg_rot_FB < 50)
+        {
             //add force forwards
-            Debug.Log("Forwards");
-        
-            bobsled.AddForce( Vector3.forward* force_amount, ForceMode.Impulse);
-        if (headset.rotation.eulerAngles.x > 360 - angle_backwards)
-                //add force backwards
-            //Debug.Log("Accel");
-           bobsled.AddForce(bobsled.transform.forward * force_amount);
-            
+            //Debug.Log("Forwards");
+                bobsled.AddForce((avg_rot_FB / 50) * force_amount * Time.deltaTime* -player.transform.forward);
+        }
 
-        avg_rot_LR =((headset.rotation.eulerAngles.z + left_con.rotation.eulerAngles.z + right_con.rotation.eulerAngles.z) / 3);
-        //Debug.Log(headset.rotation.eulerAngles.z);
-        
-        if (headset.rotation.eulerAngles.z < angle_LR)
+            bobsled.AddForce(Vector3.forward * force_amount, ForceMode.Impulse);
+        if (avg_rot_FB < -5 && avg_rot_FB > -35)
+        {
+            //add force backwards
+ 
+            bobsled.AddForce((avg_rot_FB / 50) * force_amount * Time.deltaTime* player.transform.forward);
+        }
+
+            avg_rot_LR = ((headset.transform.localEulerAngles.z + left_con.transform.localEulerAngles.z + left_con.transform.localEulerAngles.z) / 3);
+            //Debug.Log(headset.rotation.eulerAngles.z);
+
+        if (avg_rot_LR <= -5 && avg_rot_LR >= -45)
+        {
             //add force left
-          //  Debug.Log("Right");
-           bobsled.AddForce(bobsled.transform.right * force_amount_LR);
-        if (headset.rotation.eulerAngles.z < 360 - angle_LR)
-            //add force left
-          //  Debug.Log("Left");
-           bobsled.AddForce(bobsled.transform.right * -force_amount_LR);
+            
+            bobsled.AddForce((avg_rot_LR / 45) * force_amount_LR * Time.deltaTime* player.transform.right );
+        }
+
+
+        if (avg_rot_LR >= 5 && avg_rot_LR <= 45)
+        {
+                //add force left
+                
+                bobsled.AddForce((avg_rot_LR / 45) * force_amount_LR * Time.deltaTime * player.transform.right);
+            }
 
 
     }
