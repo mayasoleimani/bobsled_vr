@@ -818,7 +818,7 @@ MonoBehaviour:
   angle_LR: 45
   angle_forward: 0.2
   angle_backwards: 45
-  force_amount: 12
+  force_amount: 11
   force_amount_LR: 80
 --- !u!136 &722293345
 CapsuleCollider:
