@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Valve.VR;
 public class steering : MonoBehaviour
 {
     [SerializeField] 
@@ -19,11 +19,11 @@ public class steering : MonoBehaviour
 
     private float avg_rot_LR;
     private float avg_rot_FB;
+
+    
+   
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
  
 
@@ -31,11 +31,13 @@ public class steering : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-      
         //x is forward/backward
         //z is left/right
 
-            avg_rot_FB = (headset.transform.localEulerAngles.x );
+
+        
+
+        avg_rot_FB = (headset.transform.localEulerAngles.x );
 
         if (avg_rot_FB > 10 && avg_rot_FB < 50)
         {
