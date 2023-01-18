@@ -34,8 +34,12 @@ public class steering : MonoBehaviour
         //x is forward/backward
         //z is left/right
 
+        this.transform.eulerAngles = new Vector3(//i dont think this does anything but im keeping it here just in case
+0,
+this.transform.eulerAngles.y,
+this.transform.eulerAngles.z
+);
 
-        
 
         avg_rot_FB = (headset.transform.localEulerAngles.x );
 
@@ -79,4 +83,6 @@ public class steering : MonoBehaviour
 
 
     }
+   
+
 }
