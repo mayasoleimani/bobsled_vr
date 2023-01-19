@@ -13,6 +13,15 @@ public class follow : MonoBehaviour
         
     }
 
+    public void FixedUpdate()//makes the camera rig always look forward
+    {
+        this.transform.eulerAngles = new Vector3(
+this.transform.eulerAngles.x,
+bobsled.transform.eulerAngles.y + 45f,
+this.transform.eulerAngles.z
+);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -20,5 +29,15 @@ public class follow : MonoBehaviour
         //rig.rotation = bobsled.rotation;
 
         rig.localRotation = Quaternion.Euler(lookat.localEulerAngles.x, rig.localEulerAngles.y, lookat.localEulerAngles.z);
+
+
+
+
+
+
+
+
+
+
     }
 }
