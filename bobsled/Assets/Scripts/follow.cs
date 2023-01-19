@@ -17,7 +17,7 @@ public class follow : MonoBehaviour
     {
         this.transform.eulerAngles = new Vector3(
 this.transform.eulerAngles.x,
-bobsled.transform.eulerAngles.y + 45f,
+bobsled.transform.eulerAngles.y-45f,
 this.transform.eulerAngles.z
 );
     }
@@ -28,7 +28,7 @@ this.transform.eulerAngles.z
         rig.position = new Vector3(bobsled.position.x, bobsled.position.y, bobsled.position.z);
         //rig.rotation = bobsled.rotation;
 
-        rig.localRotation = Quaternion.Euler(lookat.localEulerAngles.x, rig.localEulerAngles.y, lookat.localEulerAngles.z);
+       // rig.localRotation = Quaternion.Euler(lookat.localEulerAngles.x, rig.localEulerAngles.y, lookat.localEulerAngles.z);
 
 
 
