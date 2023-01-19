@@ -17,7 +17,7 @@ public class follow : MonoBehaviour
     {
         this.transform.eulerAngles = new Vector3(
 this.transform.eulerAngles.x,
-bobsled.transform.eulerAngles.y-45f,
+bobsled.transform.eulerAngles.y,
 this.transform.eulerAngles.z
 );
     }

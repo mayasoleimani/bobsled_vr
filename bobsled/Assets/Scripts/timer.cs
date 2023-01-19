@@ -74,7 +74,7 @@ public class timer : MonoBehaviour
         else
         {
             rb.constraints = RigidbodyConstraints.None;
-            rb.constraints = RigidbodyConstraints.FreezeRotationY;//prevents weird camera flipping and model flipping over
+            
         }
         if(isTimerStarting)
         {
