@@ -68,7 +68,8 @@ namespace Valve.VR.InteractionSystem
 		private LineRenderer pointerLineRenderer;
 		private GameObject teleportPointerObject;
 		private Transform pointerStartTransform;
-		private Hand pointerHand = null;
+		[SerializeField]
+		public Hand pointerHand = null;
 		private Player player = null;
 		private TeleportArc teleportArc = null;
 
