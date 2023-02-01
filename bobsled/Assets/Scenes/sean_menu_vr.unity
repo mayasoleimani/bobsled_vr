@@ -877,7 +877,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &208793080
 Canvas:
   m_ObjectHideFlags: 0
@@ -1477,7 +1477,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Thick glove
+  m_Text: Play
 --- !u!222 &393552868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1541,7 +1541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &419865123
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1605,7 +1605,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &419865126
 Canvas:
   m_ObjectHideFlags: 0
@@ -2341,7 +2341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Skeleton
+  m_Text: VR Bobsledding Game
 --- !u!222 &682216169
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3499,7 +3499,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab99ac8e3c69404696e2fd09d525757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showController: 0
 --- !u!1001 &919703370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4456,7 +4455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1122104656
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4789,7 +4788,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Alien three finger
+  m_Text: Quit Game
 --- !u!222 &1169841908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5281,7 +5280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1222734313
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5345,7 +5344,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1222734316
 Canvas:
   m_ObjectHideFlags: 0
@@ -6254,7 +6253,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Hand model
+  m_Text: Main Menu
 --- !u!222 &1418600014
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7802,13 +7801,14 @@ GameObject:
   - component: {fileID: 1955972808}
   - component: {fileID: 1955972807}
   - component: {fileID: 1955972806}
+  - component: {fileID: 1955972810}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1955972806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7895,6 +7895,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 1.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1955972810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955972805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c26627b0786bd489db7ad471de1a5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1958834168
 GameObject:
   m_ObjectHideFlags: 0
@@ -8544,7 +8556,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Thin glove
+  m_Text: Options
 --- !u!222 &2070806889
 CanvasRenderer:
   m_ObjectHideFlags: 0

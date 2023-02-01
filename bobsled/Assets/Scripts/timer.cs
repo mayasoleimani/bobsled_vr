@@ -90,7 +90,7 @@ public class timer : MonoBehaviour
                     text.color = Color.yellow;
                     StartCoroutine(Countdown());
                 break;
-                case 0:
+                    case 0:
                     text.text = "GO";
                     text.color = Color.green;
                 StartCoroutine(Countdown());
