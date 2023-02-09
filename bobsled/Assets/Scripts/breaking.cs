@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 namespace Valve.VR.InteractionSystem
 {
     public class breaking : MonoBehaviour
@@ -51,7 +52,8 @@ namespace Valve.VR.InteractionSystem
             Steering(dpadAction.axis);
             if (grabPinchAction.lastState == true)
                 HandBrake();
-            Debug.Log(rb.velocity);
+           // Debug.Log(rb.velocity);
+           //
         }
     }
 }
