@@ -12,6 +12,7 @@ public class speed : MonoBehaviour
 {
     public TMP_Text text;
     public Rigidbody rb;
+    public AudioSource scrapping;
 
     void awaken() {
    
@@ -36,6 +37,11 @@ public class speed : MonoBehaviour
         string mph = "MPH";
         text.text = speed.ToString("00 ") + mph;
         text.color = Color.white;
+
+
+        scrapping.pitch = (float)(((speed) + .5) / 35); // normalizes sounds over 70
+
+
 
 
 
