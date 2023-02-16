@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.bobsled.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\danielef\\Documents\\GitHub\\bobsled_vr\\bobsled\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\xkageb\\Documents\\GitHub\\bobsled_vr\\bobsled\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Bobsled [Testing]"

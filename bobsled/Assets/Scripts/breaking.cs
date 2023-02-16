@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 namespace Valve.VR.InteractionSystem
 {
     public class breaking : MonoBehaviour
@@ -11,8 +11,10 @@ namespace Valve.VR.InteractionSystem
         public float min_vel = 10f;
         public float steering_force = 10f;
         public SteamVR_Action_Boolean grabPinchAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabPinch");
+        public SteamVR_Action_Boolean reset = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("reset");
         public SteamVR_Action_Vector2 dpadAction = SteamVR_Input.GetAction<SteamVR_Action_Vector2>("dpad");
         // public SteamVR_Action_Boolean dpad = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabPinch");
+        public GameObject player;
         public void HandBrake()
         {
             
@@ -23,11 +25,18 @@ namespace Valve.VR.InteractionSystem
             
             //reduce velcoty
         }
+
+        public void Restart()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Destroy(player);
+        }
         
     public void Steering(Vector2 dir)
         {
-           // Debug.Log(dir);
+            Debug.Log(dir);
             Vector2 target = new Vector2(-steering_force * dir.x, steering_force * dir.y);
+           
             if (target.y < 0)
                 target.y = 0;
             rb.AddRelativeForce(target);
@@ -41,14 +50,15 @@ namespace Valve.VR.InteractionSystem
 
         void Start()
         {
-
+            player = this.gameObject;
         }
 
         // Update is called once per frame
         void Update()
         {
-      
-            
+
+            if (reset.lastState == true)
+                Restart();
             Steering(dpadAction.axis);
             if (grabPinchAction.lastState == true)
                 HandBrake();
