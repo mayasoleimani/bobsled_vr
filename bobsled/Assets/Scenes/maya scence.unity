@@ -428,7 +428,6 @@ GameObject:
   m_Component:
   - component: {fileID: 528738625}
   - component: {fileID: 528738624}
-  - component: {fileID: 528738623}
   - component: {fileID: 528738622}
   m_Layer: 0
   m_Name: scenic_camera1
@@ -457,14 +456,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!81 &528738623
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528738621}
-  m_Enabled: 1
 --- !u!20 &528738624
 Camera:
   m_ObjectHideFlags: 0
@@ -544,6 +535,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075051318626187992, guid: c2ad3102a7182b74b902b232a5fba3c4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7075051318626187993, guid: c2ad3102a7182b74b902b232a5fba3c4,
         type: 3}
@@ -770,7 +766,6 @@ GameObject:
   m_Component:
   - component: {fileID: 696678009}
   - component: {fileID: 696678008}
-  - component: {fileID: 696678007}
   - component: {fileID: 696678010}
   m_Layer: 0
   m_Name: scenic_camera3
@@ -779,14 +774,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &696678007
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696678006}
-  m_Enabled: 1
 --- !u!20 &696678008
 Camera:
   m_ObjectHideFlags: 0
@@ -2026,7 +2013,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1887336841}
   - component: {fileID: 1887336840}
-  - component: {fileID: 1887336839}
   - component: {fileID: 1887336842}
   m_Layer: 0
   m_Name: scenic_camera2
@@ -2035,14 +2021,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1887336839
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887336838}
-  m_Enabled: 1
 --- !u!20 &1887336840
 Camera:
   m_ObjectHideFlags: 0
