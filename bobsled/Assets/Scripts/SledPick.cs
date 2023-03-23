@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class SledPick : MonoBehaviour
@@ -39,5 +40,9 @@ public class SledPick : MonoBehaviour
             scalar = 1;
         float rotation = 360 / no_of_sleds;
         sled_turntable.transform.Rotate(0f, rotation, 0f, Space.World);
+    }
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(2);
     }
 }
