@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -26,17 +27,22 @@ public class Scoreboard_jaxon : MonoBehaviour
 
 
     void scoreboardupdate() {
-
+        sorstuff();
 
         for (int i = 0; i < 4; i++) {
-            scores[i].GetComponent<Text>().text = Variableholder.times[i];
+            scores[i].GetComponent<Text>().text = Variableholder.times[i].ToString();
         }
-    
-    
-    
-    
-    
+
+
+
+
+
     }
 
+    void sorstuff() {
+        Array.Sort(Variableholder.times);
+        
 
+
+            }
 }

@@ -46,6 +46,8 @@ public class DeathScript : MonoBehaviour
         if(collision.collider.tag == "Ground")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Variableholder.wipeouts++;
+
             Destroy(player);
         }
     }
@@ -54,6 +56,7 @@ public class DeathScript : MonoBehaviour
     {
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Variableholder.wipeouts++;
             Destroy(player);
 
     }

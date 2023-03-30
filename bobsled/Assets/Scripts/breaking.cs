@@ -51,6 +51,7 @@ namespace Valve.VR.InteractionSystem
         void Start()
         {
             player = this.gameObject;
+            Variableholder.runs++;
         }
 
         // Update is called once per frame

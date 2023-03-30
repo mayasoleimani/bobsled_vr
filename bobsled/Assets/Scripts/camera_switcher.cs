@@ -9,7 +9,8 @@ public class camera_switcher : MonoBehaviour
     public GameObject cam2;
     public GameObject cam3;
     public GameObject player;
- 
+    public GameObject fakesled;
+
 
 
     public void Start()
@@ -49,10 +50,11 @@ public class camera_switcher : MonoBehaviour
         cam2.SetActive(false);
         cam3.SetActive(false);
         player.SetActive(true);
+        fakesled.SetActive(false);
 
     }
 
- 
+
 
 
 
