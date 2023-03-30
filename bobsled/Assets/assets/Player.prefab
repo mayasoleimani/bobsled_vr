@@ -2041,9 +2041,13 @@ MonoBehaviour:
   grabPinchAction:
     actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
+  reset:
+    actionPath: /actions/default/in/reset
+    needsReinit: 0
   dpadAction:
     actionPath: /actions/default/in/dpad
     needsReinit: 0
+  player: {fileID: 0}
 --- !u!114 &4284737563575132239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2808,6 +2812,7 @@ GameObject:
   - component: {fileID: 7075051318626187994}
   - component: {fileID: 7075051318626187995}
   - component: {fileID: 7075051318626187996}
+  - component: {fileID: 406635895606778751}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2957,9 +2962,13 @@ MonoBehaviour:
   grabPinchAction:
     actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
+  reset:
+    actionPath: /actions/default/in/reset
+    needsReinit: 0
   dpadAction:
     actionPath: /actions/default/in/dpad
     needsReinit: 0
+  player: {fileID: 0}
 --- !u!82 &7075051318626187996
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3056,6 +3065,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &406635895606778751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075051318626187992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59f258ca57b645408328e5e04fd3b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  confetti: {fileID: 0}
 --- !u!1 &7993546710858878740
 GameObject:
   m_ObjectHideFlags: 0

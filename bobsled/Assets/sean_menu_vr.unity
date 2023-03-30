@@ -242,7 +242,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: 00:00
 --- !u!222 &165746145
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2309,7 +2309,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: First
 --- !u!222 &648384360
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2770,7 +2770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: 00:00
 --- !u!222 &698801632
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3301,7 +3301,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: 00:00
 --- !u!222 &821966755
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4312,7 +4312,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Score
+  m_Text: Time
 --- !u!222 &951864147
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4606,7 +4606,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: Fourth
 --- !u!222 &1033555836
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4765,7 +4765,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: 00:00
 --- !u!222 &1116293251
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4861,7 +4861,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: Third
 --- !u!222 &1136824215
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5465,7 +5465,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: Second
 --- !u!222 &1234626084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7707,7 +7707,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name
+  m_Text: Rank
 --- !u!222 &1730549476
 CanvasRenderer:
   m_ObjectHideFlags: 0

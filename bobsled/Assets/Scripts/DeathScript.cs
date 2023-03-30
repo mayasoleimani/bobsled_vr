@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 public class DeathScript : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject confetti;
     public Collider track;
     public Camera cam;
     public Collider death_hitbox;
     float timed = 0;
     public GameObject player;
+    public timer timer;
     void Start()
     {
-        
+        confetti.SetActive(false);
     }
     /*private void OnTriggerEnter(Collider other)
     {
@@ -54,11 +56,30 @@ public class DeathScript : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Finish")
+        {
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(finisher());
+            return;
+        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Variableholder.wipeouts++;
             Destroy(player);
 
+    }
+
+    IEnumerator finisher()
+    {
+        //SHOOT CONFETTIE
+        confetti.SetActive(true);
+        
+        Variableholder.times.Add(timer.ts.TotalSeconds);
+        
+        //WAIT 3 SEONDTS
+        yield return new WaitForSeconds(5);
+
+       
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     IEnumerator ExampleCoroutine()

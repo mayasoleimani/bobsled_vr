@@ -16,7 +16,15 @@ public class Scoreboard_jaxon : MonoBehaviour
 
     void Start()
     {
+        Variableholder.times.Add(103);
+        Variableholder.times.Add(15);
+        Variableholder.times.Add(399);
+
+
+
         scoreboardupdate();
+        
+
     }
 
     // Update is called once per frame
@@ -30,17 +38,21 @@ public class Scoreboard_jaxon : MonoBehaviour
         sorstuff();
 
         for (int i = 0; i < 4; i++) {
-            scores[i].GetComponent<Text>().text = Variableholder.times[i].ToString();
+
+            double tempseconds = Variableholder.times[i] % 60;
+            double tempminutes = (Variableholder.times[i]-tempseconds) / 60;
+            scores[i].GetComponent<Text>().text = tempminutes.ToString() +":"+ tempseconds.ToString();
+
         }
 
 
-
+      
 
 
     }
 
     void sorstuff() {
-        Array.Sort(Variableholder.times);
+        Variableholder.times.Sort();
         
 
 

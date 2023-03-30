@@ -15,7 +15,8 @@ public class timer : MonoBehaviour
     private bool isTimerStarting;
     private int countdown = 2;
     public Stopwatch stopwatch;
-    TimeSpan ts;
+    public float curr_time;
+    public TimeSpan ts;
     public Rigidbody rb;
     private bool isLocked;
     

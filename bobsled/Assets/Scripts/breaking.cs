@@ -34,7 +34,7 @@ namespace Valve.VR.InteractionSystem
         
     public void Steering(Vector2 dir)
         {
-            Debug.Log(dir);
+            //Debug.Log(dir);
             Vector2 target = new Vector2(-steering_force * dir.x, steering_force * dir.y);
            
             if (target.y < 0)
