@@ -1364,10 +1364,8 @@ GameObject:
   - component: {fileID: 1289791109}
   - component: {fileID: 1289791108}
   - component: {fileID: 1289791107}
-  - component: {fileID: 1289791106}
   - component: {fileID: 1289791105}
   - component: {fileID: 1289791104}
-  - component: {fileID: 1289791103}
   m_Layer: 0
   m_Name: monobobfbx (1)
   m_TagString: Untagged
@@ -1390,22 +1388,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -450.85602, y: 255.731, z: -89.997986}
---- !u!114 &1289791103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289791101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cb1b922d4f3b4a4b8f0aaea172f3ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  track: {fileID: 0}
-  cam: {fileID: 0}
-  death_hitbox: {fileID: 0}
-  player: {fileID: 1798776206}
 --- !u!65 &1289791104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1435,28 +1417,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
---- !u!114 &1289791106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289791101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44067889a9be93e438bdafd4661e9214, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  headset: {fileID: 0}
-  left_con: {fileID: 0}
-  right_con: {fileID: 0}
-  bobsled: {fileID: 1289791105}
-  player: {fileID: 2042437781}
-  angle_LR: 45
-  angle_forward: 5
-  angle_backwards: 20
-  force_amount: 12
-  force_amount_LR: 80
 --- !u!64 &1289791107
 MeshCollider:
   m_ObjectHideFlags: 0
