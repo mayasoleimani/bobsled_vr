@@ -16,9 +16,7 @@ public class Scoreboard_jaxon : MonoBehaviour
 
     void Start()
     {
-        Variableholder.times.Add(103);
-        Variableholder.times.Add(15);
-        Variableholder.times.Add(399);
+       
 
 
 

@@ -2309,7 +2309,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: First
+  m_Text: Gold
 --- !u!222 &648384360
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2526,6 +2526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a2067ef09e1824b9db662f09281013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &669723069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4861,7 +4862,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Third
+  m_Text: Bronze
 --- !u!222 &1136824215
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5465,7 +5466,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Second
+  m_Text: Silver
 --- !u!222 &1234626084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5968,6 +5969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a2067ef09e1824b9db662f09281013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 918166044}
 --- !u!114 &1363908809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7059,6 +7061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a2067ef09e1824b9db662f09281013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &1578579585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7303,6 +7306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a2067ef09e1824b9db662f09281013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &1647978021
 MonoBehaviour:
   m_ObjectHideFlags: 0
