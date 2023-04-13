@@ -39,7 +39,7 @@ public class Scoreboard_jaxon : MonoBehaviour
 
             double tempseconds = Variableholder.times[i] % 60;
             double tempminutes = (Variableholder.times[i]-tempseconds) / 60;
-            scores[i].GetComponent<Text>().text = tempminutes.ToString() +":"+ tempseconds.ToString();
+            scores[i].GetComponent<Text>().text = tempminutes.ToString() +":"+ tempseconds.ToString("F4");
 
         }
 

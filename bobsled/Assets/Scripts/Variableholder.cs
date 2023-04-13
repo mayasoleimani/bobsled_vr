@@ -9,7 +9,7 @@ public static class Variableholder
     public static List<double> times = new List<double>();
     public static int wipeouts = 0;
     public static int runs = 0;
-    public static int totaltime = 0;
+    public static double totaltime = 0;
 
 
 

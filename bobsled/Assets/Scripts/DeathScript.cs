@@ -12,6 +12,8 @@ public class DeathScript : MonoBehaviour
     float timed = 0;
     public GameObject player;
     public timer timer;
+    public holderscript holder;
+    public bool once = true;
     void Start()
     {
         confetti.SetActive(false);
@@ -47,24 +49,23 @@ public class DeathScript : MonoBehaviour
     {
         if(collision.collider.tag == "Ground")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Variableholder.wipeouts++;
+            holder.restart();
 
-            Destroy(player);
+            
         }
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Finish")
+        if (other.tag == "Finish" && once)
         {
-
+            once = false;
             StartCoroutine(finisher());
             return;
         }
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Variableholder.wipeouts++;
-            Destroy(player);
+        //Variableholder.wipeouts++;
+        
 
     }
 
@@ -72,14 +73,15 @@ public class DeathScript : MonoBehaviour
     {
         //SHOOT CONFETTIE
         confetti.SetActive(true);
-        
-        Variableholder.times.Add(timer.ts.TotalSeconds);
-        
+        double winningtime = timer.ts.TotalSeconds;
+        Variableholder.times.Add(winningtime);
+        Variableholder.totaltime = winningtime;
+        Debug.Log(winningtime + "going");
         //WAIT 3 SEONDTS
         yield return new WaitForSeconds(5);
 
-       
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+
+        holder.finish();
     }
 
     IEnumerator ExampleCoroutine()

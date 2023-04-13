@@ -23,9 +23,16 @@ public class stats : MonoBehaviour
     public void statsupdate() {
 
 
-      scores[0].GetComponent<Text>().text =    Variableholder.wipeouts.ToString();
-        scores[1].GetComponent<Text>().text = Variableholder.runs.ToString();
-        scores[2].GetComponent<Text>().text = Variableholder.totaltime.ToString();
- 
+        scores[0].GetComponent<Text>().text =  Variableholder.runs.ToString();
+        scores[1].GetComponent<Text>().text = Variableholder.wipeouts.ToString();
+        
+        
+
+            double tempseconds = Variableholder.totaltime % 60;
+            double tempminutes = (Variableholder.totaltime - tempseconds) / 60;
+            scores[2].GetComponent<Text>().text = tempminutes.ToString() + ":" + tempseconds.ToString("F4");
+
+        
+
     }
 }
