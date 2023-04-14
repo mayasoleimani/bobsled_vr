@@ -657,17 +657,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 278.55
+      value: 278.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.78
+      value: -21.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.08
+      value: 21.54
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
@@ -20815,7 +20815,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
@@ -20835,17 +20835,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.047752485
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.546207
+      value: 5.55
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.09716717
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
@@ -21800,7 +21800,7 @@ BoxCollider:
   m_GameObject: {fileID: 7993546711394065093}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.1829383, y: 3.6372964, z: 0.45458454}
   m_Center: {x: 0.30231783, y: 1.5985708, z: 0.8053826}
