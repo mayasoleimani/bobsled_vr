@@ -20835,12 +20835,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.62
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.55
+      value: 5.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81890ab07bd766248bb33b9203b51387,
         type: 3}
@@ -21802,8 +21802,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1829383, y: 3.6372964, z: 0.45458454}
-  m_Center: {x: 0.30231783, y: 1.5985708, z: 0.8053826}
+  m_Size: {x: 0.72579616, y: 3.637297, z: 0.32509556}
+  m_Center: {x: 0.07373951, y: 1.5985707, z: 0.8701255}
 --- !u!1 &1489805430
 GameObject:
   m_ObjectHideFlags: 0
@@ -28009,11 +28009,14 @@ MonoBehaviour:
     actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
   reset:
-    actionPath: /actions/default/in/reset
+    actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
   menu:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
+  Main:
+    actionPath: /actions/default/in/menu
+    needsReinit: 1
   dpadAction:
     actionPath: /actions/default/in/dpad
     needsReinit: 0
@@ -28472,13 +28475,16 @@ MonoBehaviour:
   holder: {fileID: 715458468}
   grabPinchAction:
     actionPath: /actions/default/in/GrabPinch
-    needsReinit: 0
+    needsReinit: 1
   reset:
-    actionPath: /actions/default/in/reset
-    needsReinit: 0
-  menu:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
+  menu:
+    actionPath: 
+    needsReinit: 1
+  Main:
+    actionPath: /actions/default/in/menu
+    needsReinit: 1
   dpadAction:
     actionPath: /actions/default/in/dpad
     needsReinit: 0

@@ -49,6 +49,7 @@ public class DeathScript : MonoBehaviour
     {
         if(collision.collider.tag == "Ground")
         {
+            Debug.Log("hereniw");
             Variableholder.wipeouts++;
             holder.restart();
 
@@ -67,6 +68,7 @@ public class DeathScript : MonoBehaviour
         //Variableholder.wipeouts++;
         if (other.tag == "course")
         {
+           
             Variableholder.wipeouts++;
             holder.restart();
         }

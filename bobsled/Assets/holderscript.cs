@@ -32,6 +32,13 @@ public class holderscript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void reset()
+    {
+        Destroy(sled);
+        Debug.Log("work");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void finish()
     {
         Destroy(sled);

@@ -14,8 +14,9 @@ namespace Valve.VR.InteractionSystem
         public holderscript holder; 
 
         public SteamVR_Action_Boolean grabPinchAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabPinch");
-        public SteamVR_Action_Boolean reset = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("reset");
-        public SteamVR_Action_Boolean menu = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("menu");
+        public SteamVR_Action_Boolean reset = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabGrip");
+        //public SteamVR_Action_Boolean menu = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("menu");
+        public SteamVR_Action_Boolean Main = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("menu");
         public SteamVR_Action_Vector2 dpadAction = SteamVR_Input.GetAction<SteamVR_Action_Vector2>("dpad");
         // public SteamVR_Action_Boolean dpad = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabPinch");
         public GameObject player;
@@ -72,8 +73,12 @@ namespace Valve.VR.InteractionSystem
                 HandBrake();
             // Debug.Log(rb.velocity);
 
-            if (menu.lastState == true)
+            if (Main.lastState == true)
+            {
+                
                 holder.mainmenu();
+            }
+            Debug.Log("searching" +Main.lastState);
             //
         }
     }
