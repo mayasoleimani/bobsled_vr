@@ -65,7 +65,11 @@ public class DeathScript : MonoBehaviour
             return;
         }
         //Variableholder.wipeouts++;
-        
+        if (other.tag == "course")
+        {
+            Variableholder.wipeouts++;
+            holder.restart();
+        }
 
     }
 
