@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 public class DeathScript : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -49,7 +50,8 @@ public class DeathScript : MonoBehaviour
     {
         if(collision.collider.tag == "Ground")
         {
-            Debug.Log("hereniw");
+            
+            
             Variableholder.wipeouts++;
             holder.restart();
 
@@ -79,7 +81,7 @@ public class DeathScript : MonoBehaviour
     {
         //SHOOT CONFETTIE
         confetti.SetActive(true);
-        double winningtime = timer.ts.TotalSeconds;
+        double winningtime = Math.Truncate(timer.ts.TotalSeconds*100)/100;
         Variableholder.times.Add(winningtime);
         Variableholder.totaltime = winningtime;
         Debug.Log(winningtime + "going");

@@ -30,7 +30,13 @@ public class stats : MonoBehaviour
 
             double tempseconds = Variableholder.totaltime % 60;
             double tempminutes = (Variableholder.totaltime - tempseconds) / 60;
-            scores[2].GetComponent<Text>().text = tempminutes.ToString() + ":" + tempseconds.ToString("F4");
+        if (tempseconds < 10)
+        {
+            scores[2].GetComponent<Text>().text = tempminutes.ToString() + ":0" + tempseconds.ToString("F2");
+        }
+        else
+            scores[2].GetComponent<Text>().text = tempminutes.ToString() + ":" + tempseconds.ToString("F2");
+       
 
         
 

@@ -21791,6 +21791,7 @@ MonoBehaviour:
   timer: {fileID: 5702793815808026155}
   holder: {fileID: 715458468}
   once: 1
+  save: {fileID: 7993546711394065094}
 --- !u!65 &1461029979
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28011,9 +28012,6 @@ MonoBehaviour:
   reset:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
-  menu:
-    actionPath: /actions/default/in/GrabGrip
-    needsReinit: 0
   Main:
     actionPath: /actions/default/in/menu
     needsReinit: 1
@@ -28479,9 +28477,6 @@ MonoBehaviour:
   reset:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
-  menu:
-    actionPath: 
-    needsReinit: 1
   Main:
     actionPath: /actions/default/in/menu
     needsReinit: 1
@@ -28842,6 +28837,7 @@ GameObject:
   - component: {fileID: 5911752244551602141}
   - component: {fileID: 1461029979}
   - component: {fileID: 1461029973}
+  - component: {fileID: 7993546711394065094}
   m_Layer: 0
   m_Name: monobobfbx
   m_TagString: Untagged
@@ -28849,6 +28845,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7993546711394065094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993546711394065093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ffa2b9e2427534ea77b26696da3f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &8575583015362686836
 MeshFilter:
   m_ObjectHideFlags: 0
