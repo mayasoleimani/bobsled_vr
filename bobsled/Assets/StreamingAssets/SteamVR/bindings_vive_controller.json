@@ -292,7 +292,7 @@
    "controller_type" : "vive_controller",
    "description" : "",
    "interaction_profile" : "",
-   "name" : "",
+   "name" : "bindings_vive_controller",
    "options" : {
       "simulated_controller_type" : "none"
    },
