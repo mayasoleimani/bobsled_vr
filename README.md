@@ -19,7 +19,7 @@ Reach the finish and claim the gold❗
 * Leaderboard tracking top 3 best times 🥇🥈🥉
 
 ## Game Trailer: 
-                                                https://www.youtube.com/watch?v=BQwrdrdbM3Y
+                                                    https://www.youtube.com/watch?v=BQwrdrdbM3Y
 
 <p align="center">
 <img align="center" width="650" height="400" src=https://github.com/mayasoleimani/bobsled_vr/assets/82066258/2a59bef1-f5eb-4399-ab7a-3097b7ecba58>
